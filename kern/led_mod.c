@@ -197,7 +197,7 @@ static ssize_t led_read(struct file *f, char *c, size_t s, loff_t *l) {
     err = copy_to_user(c, &led_state, MSG_SIZE);
     if (err == 0) {
         printk(KERN_INFO "LED driver: Read %d characters.", MSG_SIZE);
-        return 0;
+        return MSG_SIZE;
     } else {
         printk(KERN_WARNING "LED driver: Read failed");
         return -1;

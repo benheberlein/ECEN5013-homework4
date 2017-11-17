@@ -105,8 +105,8 @@ int main() {
     read_duty(LED0);
     read_period(LED0);
     read_on(LED0);
-    write_duty(LED0, 10);
-    write_period(LED0, 1000);
+    write_duty(LED0, 50);
+    write_period(LED0, 4000);
     write_on(LED0, 1);
     read_duty(LED0);
     read_period(LED0);
